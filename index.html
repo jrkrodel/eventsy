@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventsy</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="whiteNav">
+        <a href="#" id="home" class="whiteLogo"></a>
+            <div class="whiteLinks">
+            <a href="#" id="home">home</a>
+            <div class="slash">/</div>
+            <a href="#" id="about">about</a>
+            <div class="slash">/</div>
+            <a href="#" id="gallery">gallery</a>
+            <div class="slash">/</div>
+            <a href="#" id="blog">blog</a>
+            <div class="slash">/</div>
+            <a href="#" id="contact">contact</a>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-links">
+                    <a href="#" id="home">home</a>
+                    <a href="#" id="about">about</a>
+                    <a href="#" id="gallery">gallery</a>
+                    <a href="#" id="blog">blog</a>
+                    <a href="#" id="contact">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="app"></div>
+
+   <footer>
+        <div class="whiteLogo">
+            <img src="images/logo/logo-white.png" alt="Eventsy logo">
+        </div>
+        <p>420 Smoke St. Los Angeles, CA 46318<br>(213)-467-2627<br>info@eventsy.com</p>
+        <div class="newsLetter">
+            <input
+            class="form-email"
+            type="text"
+            placeholder="Enter your email to join the newsletter..."
+            id="email"
+            name="email"
+            />
+              <input class="form-submit" type="submit" value="SUBSCRIBE" />
+        </div>
+        <div class="social">
+            <div class="social-image-holder social1"></div>
+            <div class="social-image-holder social2"></div>
+            <div class="social-image-holder social3"></div>
+        </div>
+        <div class="bottomText">
+            <p>Copyright 2019 eventsy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script type="module" src="model/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+</body>
+</html>
+

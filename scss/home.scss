@@ -1,0 +1,200 @@
+.home {
+  height: 100%;
+  width: 100%;
+
+  .hero {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(
+        to right,
+        $home-gold-overlay,
+        $home-gold-overlay
+      ),
+      url(../images/home-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    @include displayFlex(flex, center, center);
+
+    .hero-text {
+      @include displayFlex(flex, center, center);
+      height: 263px;
+      flex-direction: column;
+
+      h1 {
+        color: white;
+        font-family: pt-SerifReg;
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font-weight: normal;
+        letter-spacing: 0px;
+      }
+
+      h2 {
+        font-family: gill;
+        color: $site-pink;
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 50px;
+        font-weight: normal;
+        letter-spacing: 0px;
+      }
+
+      p {
+        font-family: gill;
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 61px;
+        text-align: center;
+        letter-spacing: 0px;
+      }
+
+      .btn {
+        @include siteButton(10px, 0);
+        width: 140px;
+        height: 40px;
+        p {
+          font-family: gill;
+          font-size: 15px;
+          font-style: normal;
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
+  .quote {
+    width: 100%;
+    min-height: 300px;
+    @include displayFlex(flex, center, center);
+    flex-direction: column;
+
+    .quote-text {
+      color: $site-gold;
+      max-width: 789px;
+      min-height: 150px;
+      p {
+        font-family: gill;
+        margin-bottom: 20px;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0.9px;
+      }
+
+      h1 {
+        font-size: 15px;
+        color: $site-pink;
+        font-family: pt-serifReg;
+        font-weight: normal;
+        margin-bottom: 5px;
+        letter-spacing: 0;
+      }
+      h2 {
+        font-size: 10px;
+        color: #a8a8a8;
+        font-family: pt-serifReg;
+        font-weight: normal;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  .events {
+    width: 100%;
+    min-height: 300px;
+    @include displayFlex(flex, space-around, flex-start);
+    flex-direction: column;
+    background-color: $site-purple;
+
+    .headerHolder {
+      margin-left: 40px;
+      h1 {
+        font-family: gill;
+        margin-bottom: 10px;
+        color: white;
+        letter-spacing: 5px;
+        font-weight: normal;
+        letter-spacing: 2.5px;
+      }
+
+      .line {
+        width: 392px;
+        border-bottom: white 2px solid;
+      }
+    }
+
+    .eventRow {
+      width: 100%;
+      @include displayFlex(flex, space-evenly, center);
+      .eventHolder {
+        position: relative;
+        width: 223px;
+        height: 134px;
+
+        h2 {
+          color: white;
+          position: absolute;
+          right: 0;
+          font-size: 15px;
+          font-family: gill;
+          font-weight: normal;
+          width: 140px;
+          letter-spacing: 0;
+        }
+
+        p {
+          position: absolute;
+          right: 0px;
+          bottom: 0;
+          font-family: gill;
+          width: 140px;
+          font-size: 13px;
+          color: $site-pink;
+          letter-spacing: 0;
+        }
+
+        .date {
+          background-color: $site-pink;
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          @include displayFlex(flex, center, center);
+          flex-direction: column;
+          h1 {
+            margin-bottom: 0px;
+            color: white;
+            font-size: 22px;
+            font-family: gill;
+            letter-spacing: 0;
+            &:last-of-type {
+              font-weight: 300;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home {
+    .quote {
+      padding: 0 20px 0 20px;
+    }
+    .events {
+      .headerHolder {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .eventRow {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 40px;
+        .eventHolder {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

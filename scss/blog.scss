@@ -1,0 +1,111 @@
+.blog {
+  width: 100%;
+  height: 100%;
+
+  .blog-content {
+    height: 100%;
+    max-width: 980px;
+    margin: 148px auto 37px auto;
+
+    a {
+      text-decoration: none;
+    }
+
+    .blog-text {
+      h1 {
+        border-bottom: 2px solid black;
+        font-family: gill;
+        font-size: 25px;
+        font-weight: normal;
+        width: 229px;
+        padding-bottom: 10px;
+        letter-spacing: 2.5px;
+      }
+    }
+    .blogs {
+      margin-top: 30px;
+      max-width: 980px;
+      @include displayFlex(flex, space-between, flex-start);
+      flex-direction: column;
+
+      .blog-row {
+        width: 100%;
+        min-height: 257px;
+        position: relative;
+        margin-bottom: 30px;
+        @include displayFlex(flex, space-between, flex-end);
+
+        .blog-holder {
+          width: 461px;
+          height: 257px;
+          position: relative;
+          @include displayFlex(flex, space-between, flex-end);
+          flex-direction: column;
+
+          .blog-image {
+            width: 380px;
+            height: 140px;
+            background-image: url(../images/blog.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: none;
+          }
+          h2 {
+            color: black;
+            font-family: gill;
+            font-size: 15px;
+            width: 380px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            font-weight: normal;
+            letter-spacing: 0;
+          }
+
+          p {
+            width: 380px;
+            font-family: gill;
+            font-size: 13px;
+            color: $site-pink;
+            letter-spacing: 0;
+          }
+          .blog-date {
+            background-color: $site-pink;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 0;
+            right: 0;
+            @include displayFlex(flex, center, center);
+            flex-direction: column;
+            h1 {
+              margin-bottom: 0px;
+              color: white;
+              font-size: 22px;
+              font-family: gill;
+              letter-spacing: 0;
+              &:last-of-type {
+                font-weight: 300;
+                font-size: 12px;
+                letter-spacing: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .blog {
+    padding: 0 15px 0 15px;
+    .blog-content {
+      .blog-row {
+        flex-direction: column;
+        .blog-holder {
+          margin: 0 auto 20px auto;
+          max-width: 453px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@mixin galleryHero(
+  $heroWidth: 980.5px,
+  $heroHeight: 400.5px,
+  $heroBG: $site-gold
+) {
+  max-width: $heroWidth;
+  height: $heroHeight;
+  background-color: $btnBG;
+}
+
+@mixin displayFlex(
+  $contentDisplay: flex,
+  $contentJustify: space-between,
+  $contentAlign: center
+) {
+  display: $contentDisplay;
+  justify-content: $contentJustify;
+  align-items: $contentAlign;
+}
+
+@mixin siteButton($btnPadding: 10px, $btnRadius: 25px, $btnBG: $site-pink) {
+  padding: $btnPadding;
+  border-radius: $btnRadius;
+  background-color: $btnBG;
+}

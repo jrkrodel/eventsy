@@ -1,0 +1,51 @@
+.about {
+  height: 100%;
+  width: 100%;
+
+  .about-content {
+    max-width: 980px;
+    margin: 178px auto 96px auto;
+
+    .about-image {
+      position: relative;
+      width: 100%;
+      height: 378.75px;
+      background-image: linear-gradient(
+          to right,
+          $home-gold-overlay,
+          $home-gold-overlay
+        ),
+        url(../images/about.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: none;
+      h1 {
+        position: absolute;
+        margin-bottom: 0;
+        font-family: gill;
+        font-size: 25px;
+        font-weight: normal;
+        bottom: -17.3px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+        left: 0;
+        letter-spacing: 2.5px;
+      }
+    }
+    p {
+      font-family: gill;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: lighter;
+      margin-top: 52px;
+      letter-spacing: 1.6px;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about {
+    .about-content {
+      padding: 0 20px 0 20px;
+    }
+  }
+}
