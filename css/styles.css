@@ -389,8 +389,9 @@ nav a {
   }
   .home .events .eventRow {
     flex-direction: column;
-    align-items: flex-start;
+    width: 70%;
     margin-left: 40px;
+    align-items: flex-start;
   }
   .home .events .eventRow .eventHolder {
     margin-bottom: 20px;
