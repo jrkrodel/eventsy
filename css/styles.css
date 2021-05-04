@@ -82,10 +82,7 @@ nav .whiteLinks a {
   color: white;
 }
 nav .whiteLinks .slash {
-  font-family: gill;
-  font-weight: lighter;
-  color: #ee4367;
-  font-size: 22px;
+  margin-top: 2px;
 }
 nav .blackLinks {
   width: 375px;
@@ -100,10 +97,7 @@ nav .blackLinks a {
   color: black;
 }
 nav .blackLinks .slash {
-  font-family: gill;
-  font-weight: 100;
-  color: #ee4367;
-  font-size: 22px;
+  margin-top: 2px;
 }
 
 .whiteNav {
@@ -189,7 +183,7 @@ nav a {
     display: block;
   }
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .whiteLinks,
 .blackLinks a {
     display: flex;

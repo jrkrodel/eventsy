@@ -39,10 +39,7 @@ nav {
     }
 
     .slash {
-      font-family: gill;
-      font-weight: lighter;
-      color: $site-pink;
-      font-size: 22px;
+      margin-top: 2px;
     }
   }
   .blackLinks {
@@ -57,10 +54,7 @@ nav {
     }
 
     .slash {
-      font-family: gill;
-      font-weight: 100;
-      color: $site-pink;
-      font-size: 22px;
+      margin-top: 2px;
     }
   }
 }
@@ -145,7 +139,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .whiteLinks,
   .blackLinks a {
     display: flex;
